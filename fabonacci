@@ -4,7 +4,7 @@ void fibo(int,int,int);
 void fibo(int a,int b,int end)
 {
     int c;
-    if(a>=end)
+    if(a>end)
     {
 
         return;
