@@ -16,8 +16,9 @@ void fibo(int a,int b,int end)
         a=b;
         b=c;
         fibo(a,b,end);
+    
+    return(fibo);
     }
-    return;
 }
 
 int main()
