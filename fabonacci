@@ -1,0 +1,32 @@
+#include<stdio.h>
+void fibo(int,int,int);
+
+void fibo(int a,int b,int end)
+{
+    int c;
+    if(a>=end)
+    {
+
+        return;
+    }
+    else
+    {
+        c=a+b;
+        printf("%d\t",a);
+        a=b;
+        b=c;
+        fibo(a,b,end);
+    }
+    return;
+}
+
+int main()
+{
+    int a,b,e;
+    a=0,b=1;
+    printf("Enter last number in series=");
+    scanf("%d",&e);
+    printf("Disply fibonicci series=");
+    fibo(a,b,e);
+    return 0;
+}
